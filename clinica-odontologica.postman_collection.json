@@ -1,0 +1,511 @@
+{
+	"info": {
+		"_postman_id": "dea0aff6-da62-491a-a305-0c7e18730f54",
+		"name": "clinica-odontologica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18554711"
+	},
+	"item": [
+		{
+			"name": "Listar Odontologos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/odontologos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pacientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Turnos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/turnos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Odontologo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apellido\": \"Justel\",\r\n    \"nombre\": \"Nacho\",\r\n    \"matricula\": \"AJY4257\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/odontologos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Odontologo id=1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"apellido\": \"Justel\",\r\n    \"nombre\": \"Nacho\",\r\n    \"matricula\": \"NJ12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/odontologos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Paciente 1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apellido\": \"Alvarado\",\r\n    \"nombre\": \"Aniuska\",\r\n    \"email\": \"ani@gmail.com\",\r\n    \"dni\": 35241475,\r\n    \"fechaIngreso\": \"2022-05-15\",\r\n    \"domicilio\": {\r\n        \"calle\": \"Calle falsa\",\r\n        \"numero\": 458,\r\n        \"localidad\": \"Capital\",\r\n        \"provincia\": \"Buenos Aires\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Paciente id=1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"apellido\": \"Alvarado\",\r\n    \"nombre\": \"Aniuska\",\r\n    \"email\": \"aniuska@gmail.com\",\r\n    \"dni\": 35215475,\r\n    \"fechaIngreso\": \"2022-05-15\",\r\n    \"domicilio\": {\r\n        \"id\": 1,\r\n        \"calle\": \"Calle Aniuska\",\r\n        \"numero\": 458,\r\n        \"localidad\": \"Capital\",\r\n        \"provincia\": \"Buenos Aires\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Paciente 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apellido\": \"Cavallaro\",\r\n    \"nombre\": \"Romina\",\r\n    \"email\": \"romi@gmail.com\",\r\n    \"dni\": 36587632,\r\n    \"fechaIngreso\": \"2022-04-12\",\r\n    \"domicilio\": {\r\n        \"calle\": \"Calle falsa2\",\r\n        \"numero\": 521,\r\n        \"localidad\": \"Capital\",\r\n        \"provincia\": \"Buenos Aires\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Turno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"odontologo\": {\r\n        \"id\": 1,\r\n        \"apellido\": \"Justel\",\r\n        \"nombre\": \"Nacho\",\r\n        \"matricula\": \"4257\"\r\n    },\r\n    \"paciente\": {\r\n        \"id\": 1,\r\n        \"apellido\": \"Alvarado\",\r\n        \"nombre\": \"Aniuska\",\r\n        \"email\": \"ani@gmail.com\",\r\n        \"dni\": 3521475,\r\n        \"fechaIngreso\": \"2022-05-15\",\r\n        \"domicilio\": {\r\n            \"id\": 1,\r\n            \"calle\": \"Calle falsa\",\r\n            \"numero\": 458,\r\n            \"localidad\": \"Capital\",\r\n            \"provincia\": \"Buenos Aires\"\r\n        }\r\n    },\r\n    \"fecha\": \"2022-05-27\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/turnos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Turno id=1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"id\": 1,\r\n    \"odontologo\": {\r\n        \"id\": 1,\r\n        \"apellido\": \"Justel\",\r\n        \"nombre\": \"Nacho\",\r\n        \"matricula\": \"4257\"\r\n    },\r\n    \"paciente\": {\r\n        \"id\": 1,\r\n        \"apellido\": \"Alvarado\",\r\n        \"nombre\": \"Aniuska\",\r\n        \"email\": \"ani@gmail.com\",\r\n        \"dni\": 3521475,\r\n        \"fechaIngreso\": \"2022-05-15\",\r\n        \"domicilio\": {\r\n            \"id\": 1,\r\n            \"calle\": \"Calle falsa\",\r\n            \"numero\": 458,\r\n            \"localidad\": \"Capital\",\r\n            \"provincia\": \"Buenos Aires\"\r\n        }\r\n    },\r\n    \"fecha\": \"2022-05-29\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/turnos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Turno V2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paciente\": {\r\n        \"id\": 2\r\n    },\r\n    \"odontologo\": {\r\n        \"id\": 1\r\n    },\r\n    \"fecha\": \"2022-06-16\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/turnos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Turno id=1 V2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"id\": 1,\r\n    \"odontologo\": {\r\n        \"id\": 1\r\n    },\r\n    \"paciente\": {\r\n        \"id\": 1\r\n    },\r\n    \"fecha\": \"2022-05-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/turnos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Paciente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Odontologo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/odontologos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Turno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/turnos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turnos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/loginADMIN",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Nacho",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "nacho",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/loginUSER",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user1",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "u1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

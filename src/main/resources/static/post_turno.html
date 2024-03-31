@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Alta turnos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/turnos/post_turno.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg" style="margin: 15px 60px;">
+    <a class="navbar-brand" href="/" style="color: var(--dark); font-weight: 500">
+        <img src="https://i.pinimg.com/564x/f8/89/d4/f889d44759d50c03e306d05e3a47aad5.jpg" style=" margin-left: 5px; width:40px; height: 40px;"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto" style="diplay: flex; align-items: center; justify-content: center; flex-direction: row;">
+            <li class="nav-item dropdown" style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOdontologos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: var(--cyan); margin-right:1rem;">
+                    Odontólogos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/get_all_odontologos.html">Listar odontólogos</a>
+                    <a class="dropdown-item" href="/post_odontologo.html">Agregar odontólogo</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPacientes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: var(--cyan); margin-right:1rem;">
+                    Pacientes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                    <a class="dropdown-item" href="/get_all_pacientes.html">Listar pacientes</a>
+                    <a class="dropdown-item" href="/post_paciente.html">Agregar paciente</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTurnos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: var(--cyan); margin-right:1rem;">
+                    Turnos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/get_all_turnos.html">Listar turnos</a>
+                    <a class="dropdown-item" href="/post_turno.html">Agregar turno</a>
+                </div>
+            </li>
+        </ul>
+        <a class="btn" href="/logout" style="background-color: var(--cyan); color: var(--white); margin-left: 2rem">Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+            <h3>Agregar Turno</h3>
+            <form id="add_new_turno">
+                <div class="form-group">
+                    <label class="control-label" for="odontologo">Odontologo:</label>
+                    <input type="number" class="form-control" id="odontologo"
+                           placeholder="Ingrese el odontologo"
+                           name="odontologo" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="paciente">Paciente:</label>
+                    <input type="number" class="form-control" id="paciente"
+                           placeholder="Ingrese el paciente"
+                           name="paciente" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="fecha-y-hora">Fecha y hora:</label>
+                    <input type="datetime-local" class="form-control" id="fecha-y-hora"
+                           placeholder="Ingrese la fecha y hora"
+                           name="fecha-hora" required></input>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary"
+                        id="btn-add-new-paciente">Guardar</button>
+            </form>
+            <div id="response" style="display:none; margin-top:10px">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

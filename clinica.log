@@ -1,0 +1,69 @@
+[2022-07-07 15:13:47] [ ERROR] [TurnoController:59] ERROR. com.dh.clinicaOdontologica.exceptions.BadRequestException: El paciente con id: 1 no existe
+[2022-07-07 15:20:19] [ ERROR] [TurnoController:62] ERROR. com.dh.clinicaOdontologica.exceptions.BadRequestException: El odontologo con id: 1 y el paciente con id: 1 no existen
+[2022-07-07 15:32:37] [ ERROR] [TurnoController:56] ERROR. com.dh.clinicaOdontologica.exceptions.BadRequestException: El odontologo con id: 1 no existe
+[2022-07-09 11:18:52] [ INFO ] [TurnoController:93] Cuidado. Se eliminó el turno con id= 1 perteneciente al paciente con DNI 352
+[2022-07-09 11:31:09] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:31:38] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:31:50] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:32:05] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:32:20] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:42:48] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:43:25] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:43:53] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:44:16] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:44:53] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:45:04] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:45:13] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:45:20] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:45:36] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 11:47:37] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 15:20:35] [ ERROR] [TurnoController:67] com.dh.clinicaOdontologica.exceptions.BadRequestException: El odontologo con id: 1 y el paciente con id: 1 no existen
+[2022-07-09 18:23:16] [ ERROR] [TurnoController:63] No se encontró al Odontólogo con ID: 2 para realizar la eliminación. Por favor ingrese nuevamente el ID
+[2022-07-09 18:27:42] [ INFO ] [TurnoController:93] Cuidado. Se eliminó el turno con id= 1 perteneciente al paciente con DNI 3521475
+[2022-07-09 18:29:00] [ ERROR] [TurnoController:97] com.dh.clinicaOdontologica.exceptions.ResourceNotFoundException: El turno con id 1 a eliminar no existe
+[2022-07-09 18:29:06] [ INFO ] [TurnoController:93] Cuidado. Se eliminó el turno con id= 2 perteneciente al paciente con DNI 3521475
+[2022-07-09 20:55:12] [ INFO ] [TurnoController:93] Cuidado. Se eliminó el turno con id= 1 perteneciente al paciente con DNI 3521475
+[2022-07-09 20:55:28] [ INFO ] [TurnoController:93] Cuidado. Se eliminó el turno con id= 2 perteneciente al paciente con DNI 3521475
+[2022-07-09 20:55:34] [ ERROR] [TurnoController:97] com.dh.clinicaOdontologica.exceptions.ResourceNotFoundException: El turno con id 1 a eliminar no existe
+[2022-07-09 21:09:17] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 21:10:24] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 22:51:23] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 22:51:28] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 22:59:06] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+[2022-07-09 23:13:45] [ INFO ] [TurnoController:78] Cuidado. Se modificó el turno con id= 1
+
+[2022-07-10 12:07:48] [ ERROR] [TurnoController:56] El paciente con ID: 1 no existe
+[2022-07-10 15:04:31] [ ERROR] [TurnoController:38] com.dh.clinicaOdontologica.exceptions.ResourceNotFoundException: El paciente con ID: 2 buscado no se encuentra registrado. Por favor verifique si ingresó el ID correctamente
+[2022-07-10 15:04:40] [ ERROR] [TurnoController:38] com.dh.clinicaOdontologica.exceptions.ResourceNotFoundException: El odontologo con ID: 2 no se encuentra registrado. Por favor, verifique si el ID ingresado es correcto.
+[2022-07-10 15:04:56] [ ERROR] [TurnoController:46] com.dh.clinicaOdontologica.exceptions.ResourceNotFoundException: El turno con ID: 12 no se encuentra registrado. Por favor verifique si ingresó el ID correctamente.
+[2022-07-10 15:11:16] [ ERROR] [TurnoController:62] com.dh.clinicaOdontologica.exceptions.BadRequestException: El odontologo con ID: 15 no existe
+[2022-07-10 15:11:21] [ ERROR] [TurnoController:70] com.dh.clinicaOdontologica.exceptions.BadRequestException: El odontologo con ID: 15 y el paciente con ID: 12 no existen
+[2022-07-10 15:11:26] [ ERROR] [TurnoController:66] com.dh.clinicaOdontologica.exceptions.BadRequestException: El paciente con ID: 2 no existe
+[2022-07-10 15:13:33] [ ERROR] [TurnoController:38] com.dh.clinicaOdontologica.exceptions.ResourceNotFoundException: El odontologo con ID: 17 no se encuentra registrado. Por favor, verifique si el ID ingresado es correcto.
+[2022-07-10 15:21:35] [ INFO ] [TurnoController:53] Cuidado. Se modificó el odontólogo con ID= 1
+[2022-07-10 15:21:46] [ INFO ] [TurnoController:52] Cuidado. Se modificó el paciente con ID= 1
+[2022-07-10 15:22:12] [ INFO ] [TurnoController:81] Cuidado. Se modificó el turno con ID= 1
+[2022-07-10 15:22:58] [ INFO ] [TurnoController:96] Cuidado. Se eliminó el turno con ID= 1 perteneciente al paciente con DNI 3521475
+[2022-07-10 15:25:33] [ INFO ] [TurnoController:68] Cuidado. Se elimino al paciente con ID: 1
+[2022-07-10 15:25:36] [ INFO ] [TurnoController:66] Cuidado. Se elimino al odontologo con ID: 1
+[2022-07-10 15:32:29] [ ERROR] [TurnoController:46] com.dh.clinicaOdontologica.exceptions.ResourceNotFoundException: El turno con ID: 4 no se encuentra registrado. Por favor verifique si ingresó el ID correctamente.
+[2022-07-10 15:44:33] [ ERROR] [TurnoController:17] El turno con ID: 2 no se encuentra registrado. Por favor verifique si ingresó el ID correctamente.
+
+[2022-07-11 18:12:16] [ INFO ] [TurnoController:76] Cuidado. Se modificó el turno con ID= 1
+[2022-07-11 18:12:24] [ INFO ] [TurnoController:76] Cuidado. Se modificó el turno con ID= 1
+[2022-07-11 18:12:33] [ INFO ] [TurnoController:50] Cuidado. Se modificó el paciente con ID= 1
+[2022-07-11 18:13:00] [ INFO ] [TurnoController:48] Cuidado. Se modificó el odontólogo con ID= 2
+[2022-07-11 18:13:01] [ INFO ] [TurnoController:60] Cuidado. Se eliminó al odontologo con ID: 2
+[2022-07-11 18:15:44] [ INFO ] [TurnoController:76] Cuidado. Se modificó el turno con ID= 1
+[2022-07-11 18:15:45] [ INFO ] [TurnoController:89] Cuidado. Se eliminó el turno con ID: 1 perteneciente al paciente con DNI: 132413
+[2024-03-31 00:07:20] [ INFO ] [TurnoController:60] Cuidado. Se eliminó al odontologo con ID: 1
+[2024-03-31 00:19:30] [ INFO ] [TurnoController:64] Cuidado. Se eliminó al paciente con ID: 1
+[2024-03-31 00:21:11] [ INFO ] [TurnoController:64] Cuidado. Se eliminó al paciente con ID: 2
+[2024-03-31 01:02:28] [ INFO ] [TurnoController:48] Cuidado. Se modificó el odontólogo con ID= 1
+[2024-03-31 01:02:41] [ INFO ] [TurnoController:48] Cuidado. Se modificó el odontólogo con ID= 1
+[2024-03-31 01:07:12] [ INFO ] [TurnoController:60] Cuidado. Se eliminó al odontologo con ID: 1
+[2024-03-31 01:07:31] [ ERROR] [TurnoController:17] El odontólogo con ID 1 a actualizar no se encuentra registrado
+[2024-03-31 04:11:53] [ INFO ] [TurnoController:60] Cuidado. Se eliminó al odontologo con ID: 1
+[2024-03-31 04:14:17] [ INFO ] [TurnoController:48] Cuidado. Se modificó el odontólogo con ID= 2
+[2024-03-31 04:17:39] [ INFO ] [TurnoController:48] Cuidado. Se modificó el odontólogo con ID= 2
+[2024-03-31 04:17:46] [ INFO ] [TurnoController:48] Cuidado. Se modificó el odontólogo con ID= 2
