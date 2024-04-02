@@ -9,12 +9,5 @@ Detalles:
 
 ## Configuración del inicio de sesión
 
+Correr el proyecto e ir a:
 http://localhost:8080/
-
-Para iniciar sesión como admin lo que necesitar es:
-- Username: admin
-- Password: admin
-
-Para iniciar sesión como un usuario tienes que poner lo siguiente:
-- Username: user
-- Password: user
