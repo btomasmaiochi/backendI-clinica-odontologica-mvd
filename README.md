@@ -9,6 +9,8 @@ Detalles:
 
 ## Configuración del inicio de sesión
 
+http://localhost:8080/
+
 Para iniciar sesión como admin lo que necesitar es:
 - Username: admin
 - Password: admin
